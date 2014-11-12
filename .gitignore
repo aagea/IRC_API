@@ -5,7 +5,7 @@
 *.war
 *.ear
 *.iml
-*.xml
 *.idea
 out
-
+target
+atlassian-ide-plugin.xml
