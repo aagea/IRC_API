@@ -1,2 +1,2 @@
-IRCbot
+IRC_API
 ======
