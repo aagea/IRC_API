@@ -14,7 +14,7 @@ import java.util.Map;
 
 public class ConnectorIRCHelper implements IConnectorIRC {
 
-    private Map<String, List<Message>> messages = new HashMap<>();
+    private Map<String, List<Message>> messages = new HashMap<String,List<Message>>();
     String nick;
 
     @Override
