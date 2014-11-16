@@ -1,53 +1,40 @@
 package com.stratio.irc;
 
-import java.util.List;
+import java.util.Calendar;
+import java.util.Calendar;
 
 public class Message {
-    private String timestamp;
-    private String user;
-    private String message;
-    private String channel;
+    private final Calendar timestamp;
+    private final String user;
+    private final String host;
+    private final String channel;
+    private final String message;
 
-    public Message(){
-
-    }
-
-    public Message(String timestamp, String user, String message, String channel) {
-        this.timestamp = timestamp;
+    public Message(String user, String host, String channel, String message) {
+        timestamp = Calendar.getInstance();
         this.user = user;
-        this.message = message;
+        this.host = host;
         this.channel = channel;
+        this.message = message;
     }
 
-    public String getTimestamp() {
+    public Calendar getTimestamp() {
         return timestamp;
-    }
-
-    public void setTimestamp(String timestamp) {
-        this.timestamp = timestamp;
     }
 
     public String getUser() {
         return user;
     }
 
-    public void setUser(String user) {
-        this.user = user;
-    }
-
-    public String getMessage() {
-        return message;
-    }
-
-    public void setMessage(String message) {
-        this.message = message;
+    public String getHost() {
+        return host;
     }
 
     public String getChannel() {
         return channel;
     }
 
-    public void setChannel(String channel) {
-        this.channel = channel;
+    public String getMessage() {
+        return message;
     }
 }
